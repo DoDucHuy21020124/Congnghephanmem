@@ -1,11 +1,9 @@
 body {
-	background-image: url('../../public/images/img-2.jpg');
+	background-image: url('../../public/images/img-5.jpg');
 	background-position: center;
 	background-size: cover;	
 	background-repeat: no-repeat;
-	color: #fff;
 	font-size: 28px;
-	border-top: #fff solid 2px;
   }
 
   .container {
@@ -17,7 +15,7 @@ body {
   }
 
   .screen {		
-	  background: linear-gradient(90deg, #242321, #7C78B8);		
+	  background: linear-gradient(90deg, #6b6458, #7C78B8);		
 	  position: relative;	
 	  height: 600px;
 	  width: 360px;	

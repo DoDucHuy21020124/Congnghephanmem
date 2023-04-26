@@ -38,7 +38,7 @@ const DialogNotiForm = ({onConfirm, desFeilds}) =>{
 
   return (
     <div>
-      <Button variant="contained" onClick={handleClickOpen}>Create Notification</Button>
+      <Button style={{position :'absolute',left :"660px" ,top : "280px"}} variant="contained" onClick={handleClickOpen}>Create Notification</Button>
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
         <DialogTitle id="form-dialog-title">Create Notification</DialogTitle>
         <DialogContent>

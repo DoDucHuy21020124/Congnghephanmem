@@ -28,26 +28,29 @@
   
   /*---------------------------------------------*/
   .account-page{
-    background-image: url('../../public/images/img-2.jpg');
-    display: block;
+    background:  linear-gradient(2deg, rgb(63, 79, 128) 0%, rgb(139, 106, 106) 100%);
     margin: auto;
+    margin-top: 2%;
+    display: block;
     width: 40%;
     font-size: 1.5rem;
     padding-top: 5%;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
     border-radius: 7%;
+    justify-content: center;
   }
 
   .account-page h3{
     display: flex;
     justify-content: center;
     padding-bottom: 5px;
+    color:rgb(255, 255, 255)
   }
   .account-page h4{
     padding-top: 10px;
     display: flex;
     justify-content: center;
-    color: rgb(2, 123, 18);
+    color: rgb(1, 255, 213);
   }
   .account-page .button-align{
     padding-top: 50px;

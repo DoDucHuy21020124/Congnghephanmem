@@ -12,7 +12,7 @@ import { useState } from 'react';
 const FormDialog = ({title, content, onSell}) =>{
   const [open, setOpen] = useState(false);
   const [value,setValue] = useState("")
-  const [date,setDate] = useState("2022-01-01")
+  const [date,setDate] = useState("2023-01-01")
 
   const handleClickOpen = () => {
     setOpen(true);
