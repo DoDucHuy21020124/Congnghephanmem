@@ -13,16 +13,13 @@
 }
 
   h1 {
-    position: absolute;
-  
     text-align: center;
-    left: 640px;
     color: #ffffff;
 
   }
 
   .cards__container {
-   
+    display: flex;
     flex-flow: column;
     align-items: center;
     max-width: 12px;

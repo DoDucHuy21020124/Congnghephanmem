@@ -5,7 +5,6 @@ import { updateAccountData, PostServerData, FetchServerData,DeleteServerData } f
 import Cards from "../Cards"
 import { useState } from "react"
 import DialogAlert from "../DialogAlert"
-import ServiceBar from "../ServiceBar"
 
 
 const Services = () =>{
@@ -45,7 +44,6 @@ const Services = () =>{
     }
     return (
         <>
-        <div>
             <Cards 
             title="Notification" data={data} 
             onDelete={deleteServerData} 
@@ -54,11 +52,7 @@ const Services = () =>{
 
             </Cards>
             <DialogAlert open={alertOpen} setOpen={setAlertOpen} content={alertContent} severity={alertSeverity}></DialogAlert>
-           <ServiceBar></ServiceBar>
-           
-           </div>
         </>
-                    
       )
 }
 
