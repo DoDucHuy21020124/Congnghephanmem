@@ -434,11 +434,11 @@ const UpdateState = function(state){
     state.allPositionFeild = [...AccountsPositions.Producer, ...AccountsPositions.Seller, ...AccountsPositions.Insurance]
 
     const newNotiData = []
-    // for(i = 0; i < notifications.length; i++){
-    //     if(notifications[i].des_position.toLowerCase().includes(state.accountPosition.toLowerCase())){
-    //         newNotiData.push(notifications[i])
-    //     }
-    // }
+    for(i = 0; i < notifications.length; i++){
+        if(notifications[i].des_position.toLowerCase().includes(state.accountPosition.toLowerCase())){
+            newNotiData.push(notifications[i])
+        }
+    }
     state.notifications = newNotiData
 
     
