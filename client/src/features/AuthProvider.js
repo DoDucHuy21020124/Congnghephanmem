@@ -435,13 +435,12 @@ const UpdateState = function(state){
 
     const newNotiData = []
     for(i = 0; i < notifications.length; i++){
-        if(notifications[i].des_position.toLowerCase().includes(state.accountPosition.toLowerCase())){
+        if(notifications[i].des_position && notifications[i].des_position.toLowerCase().includes(state.accountPosition.toLowerCase())){
             newNotiData.push(notifications[i])
         }
     }
     state.notifications = newNotiData
 
-    
 }
 
 export const FetchServerData = async function(type){
