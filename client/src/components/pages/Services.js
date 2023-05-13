@@ -52,7 +52,7 @@ const Services = () =>{
             desFeilds = {desFeilds}>
 
             </Cards>
-            {/* <DialogAlert open={alertOpen} setOpen={setAlertOpen} content={alertContent} severity={alertSeverity}></DialogAlert> */}
+            <DialogAlert open={alertOpen} setOpen={setAlertOpen} content={alertContent} severity={alertSeverity}></DialogAlert> 
           
         </>
       )

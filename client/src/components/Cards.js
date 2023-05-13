@@ -9,6 +9,9 @@ const Cards = ({title,data,onDelete,onCreate,desFeilds}) => {
         <h1>{title}</h1>
         <div className='cards__container'>
             <div className='cards__wrapper'>
+                <ul className='create'>
+                    <DialogNotiForm onConfirm={onCreate} desFeilds={desFeilds}></DialogNotiForm>
+                </ul>
                 <ul className='cards__items'>
                     {
                         data.map((item,index) => 
@@ -21,9 +24,6 @@ const Cards = ({title,data,onDelete,onCreate,desFeilds}) => {
                         onDelete = {onDelete}
                         />))
                     }
-                </ul>
-                <ul>
-                    <DialogNotiForm onConfirm={onCreate} desFeilds={desFeilds}></DialogNotiForm>
                 </ul>
             </div>
         </div>
