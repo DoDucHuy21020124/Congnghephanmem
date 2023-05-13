@@ -14,7 +14,7 @@
 
   h1 {
     text-align: center;
-    color: #ffffff;
+    color: white;
 
   }
 
@@ -38,6 +38,7 @@
   .cards__items {
     margin-bottom: 36px;
     display: grid;
+
     grid-template-columns: auto auto;
   }
 
