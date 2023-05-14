@@ -37,7 +37,7 @@ const DialogNotiForm = ({onConfirm, desFeilds}) =>{
   }
 
   return (
-    <div>
+    <div style={{display : "block !important" }} >
       <Button variant="contained" onClick={handleClickOpen}>Create Notification</Button>
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
         <DialogTitle id="form-dialog-title">Create Notification</DialogTitle>
@@ -46,6 +46,7 @@ const DialogNotiForm = ({onConfirm, desFeilds}) =>{
           </DialogContentText>
           <TextField
             autoFocus
+            
             margin="dense"
             id="noti-title"
             label="TITLE"
@@ -64,7 +65,7 @@ const DialogNotiForm = ({onConfirm, desFeilds}) =>{
             onChange={(e) => setNotiContent(e.target.value)}
             value={notiContent}
           />
-            <select style={{minWidth: "80px", marginLeft: "30px",marginTop: "30px",minHeight: "50px"}} did="destination" name="destination" value={type} onChange={e => setType(e.target.value)}>
+            <select style={{minWidth: "50px", marginLeft: "30px",marginTop: "30px",minHeight: "50px",display:"flow"}} did="destination" name="destination" value={type} onChange={e => setType(e.target.value)}>
                 <option value="info">Info</option>    
                 <option value="warning">Warning</option>
                 <option value="success" >Success</option>
